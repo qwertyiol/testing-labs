@@ -96,7 +96,7 @@ public class AviaBiletWebTest extends GeneralConfig {
         assertThat(testItemName, is(equalTo(UNO_ITEM_NAME)));
     }
 
-    @Test
+    /*@Test
     public void testCheckVacancyInBorisov() throws InterruptedException {
         Vacancy vacancy = VacancyCreator.createVacancyInBorisov();
         VacancyPage vacancyPage = new VacancyPage(driver).openPage()
@@ -117,7 +117,7 @@ public class AviaBiletWebTest extends GeneralConfig {
         String vacancyTitle = vacancyPage.vacancyTitile.getText();
         assertThat(vacancyTitle, is(equalTo(vacancy.getTitle())));
 
-    }
+    }*/
 
     @Test
     public void testSendEmptyVacancy() throws InterruptedException {
@@ -151,7 +151,7 @@ public class AviaBiletWebTest extends GeneralConfig {
 
     }
 
-    @Test
+    /*@Test
     public void testCheckHelpItem() {
         HelpPage helpItemPage = new HelpPage(driver);
         String title = helpItemPage.openPage()
@@ -169,5 +169,5 @@ public class AviaBiletWebTest extends GeneralConfig {
         String url = driver.getCurrentUrl();
         driver.switchTo().alert();
         assertThat(vacancyPage.vk.getText(), is(equalTo(VK_TITLE)));
-    }
+    }*/
 }
