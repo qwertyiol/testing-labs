@@ -82,6 +82,7 @@ public class AviaBiletWebTest extends GeneralConfig {
         BasketPage basket = new BasketPage(driver);
         basket.couponInput.sendKeys(coupon.name);
         basket.submitCouponButton.click();
+        Thread.sleep(3000);
         assertThat(basket.errorCouponMessage.findElement(new By.ByTagName("a")).getText(), is(equalTo(COUPON_ERROR_MESSAGE)));
     }
 
