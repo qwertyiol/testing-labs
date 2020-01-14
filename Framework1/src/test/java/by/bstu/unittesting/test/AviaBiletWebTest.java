@@ -70,7 +70,7 @@ public class AviaBiletWebTest extends GeneralConfig {
 
     }
 
-    @Test
+   /* @Test
     public void testCheckCouponErrorMessage() throws InterruptedException {
         Coupon coupon = CouponCreator.createCoupon();
         BookPage page = new BookPage(driver);
@@ -94,8 +94,8 @@ public class AviaBiletWebTest extends GeneralConfig {
                 .clickUnoItem()
                 .getItemName();
         assertThat(testItemName, is(equalTo(UNO_ITEM_NAME)));
-    }
-
+    }*/
+    
     /*@Test
     public void testCheckVacancyInBorisov() throws InterruptedException {
         Vacancy vacancy = VacancyCreator.createVacancyInBorisov();
